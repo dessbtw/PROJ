@@ -1,0 +1,405 @@
+body {
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+ul {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.top {
+    width: auto;
+    height: 50px;
+    display: flex;
+}
+
+.toplogo {
+    display: block;
+    background-image: url(logo.png);
+    width: 140px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #606060;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.08);
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #3C41DD;
+    text-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.cont {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.slider {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    object-fit: cover;
+  }
+  
+  .slider-img.active {
+    opacity: 1;
+  }
+  
+  .slider .left, .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .left, .right {
+    opacity: 0.0;
+    width: 140px;
+    height: 100%;
+    background-color: beige;
+  }
+
+  .controlls:hover {
+    opacity: 0.1;
+    transition: ease-in-out;
+  }
+  
+  .slider .left {
+    left: 0px;
+  }
+  
+  .slider .right {
+    right: 0px;
+  }
+
+h2 {
+    font-size: 26px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 12px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.tblock1 {
+    width: 380px;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    position: relative;
+    bottom: 70%;
+    left: 160px;
+}
+
+.button {
+    background-color: #3C41DD;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 25px;
+}
+
+.icogroup {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.icoimg {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    padding-left: 16px;
+}
+
+.ico1 {
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textico {
+    margin-top: 10px;
+}
+
+.about {
+    width: fit-content;
+    text-align: left;
+}
+
+.textslogan {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 50px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.logoim {
+    display: block;
+    background-image: url(logo.png);
+    width: 140px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 280px;
+    left: 435px;
+}
+
+.numabout {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.num1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects {
+    width: 100%;
+    height: 650px;
+    background-color: #16181C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 50px;
+    margin-top: 100px;
+}
+
+.textproject {
+    margin: 0 auto;
+    padding: 0 auto;
+    color: white;
+}
+
+.textmetro {
+    color: white;
+}
+
+.imageblock {
+    width: 50%;
+    height: 0px;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+
+.imageblock.act {
+    height: 400px;
+    opacity: 1;
+}
+
+.projectimage {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.contr {
+    height: 20px;
+    width: 50px;
+    background-color: #ffffff;
+    opacity: 0.4;
+    transition: 0.1s ease-in-out;
+}
+
+.contr:hover {
+    opacity: 1;
+}
+
+.controlbar {
+    width: 50%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.geography {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map {
+    width: 70%;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.geoh3 {
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #3C41DD;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.partners {
+    width: 100%;
+    background-color: #16181C;
+    color: #ffffff;
+    text-align: center;
+}
+
+.company {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.companyimg {
+    width: 400px;
+    height: fit-content;
+}
+
+.slogan {
+    width: 600px;
+    text-align: end;
+    margin: 0;
+}
+
+.cont1 {
+    width: 100%;
+    background-color: #16181C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+.column {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.columngroup {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    gap: 50px;
+}
+
+.office {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textoff {
+    margin: 0;
+}
+
