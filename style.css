@@ -129,6 +129,7 @@ h1 {
 h2 {
     width: fit-content;
     font-size: 26px;
+    margin: 0;
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -233,9 +234,22 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.imlogocont {
+    width: 100%;
+    height: fit-content;
     position: relative;
-    bottom: 280px;
-    left: 435px;
+    display: inline-block;
+}
+
+.imlogo {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .numabout {
@@ -243,13 +257,14 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    text-align: center;
 }
 
 .num1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .projects {
@@ -412,11 +427,22 @@ p {
     margin: 0;
 }
 
-@media (max-width: 1300px) {
+.burger {
+    width: 0;
+    height: 0;
+    display: none;
+    background-image: url(burger.png);
+    overflow: hidden;
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
     .aboutcontainer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .imlogocont{
+        width: 80%;
     }
     .textslogan {
         margin: 0 auto;
@@ -425,5 +451,83 @@ p {
     h2 {
         margin: 0 auto;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .aboutcontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .textslogan {
+        margin: 0 auto;
+        text-align: left;
+    }
+    h2 {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .about {
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        align-items: start;
+    }
+    ul li {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .top {
+        width: 600px;
+        display: inline-block;
+        left: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .burger {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        background-image: url(burger.png);
+        background-size: contain;
+        background-position: center;
+    }
+    body {
+        width: 100%;
+    }
+    h1 {
+        max-width: 400px;
+        text-align: center;
+    }
+    .icogroup {
+        width: 60%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .ico1 {
+        width: 100%;
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content:flex-start;
+        text-align: start;
+        padding: 0;
+    }
+    .icoimg{
+        padding: 0;
+        object-fit: contain;
+    }
+    .textico {
+        max-width: 60%;
+    }
+    .textleft {
+        width: 80%;
     }
 }
