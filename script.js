@@ -34,7 +34,7 @@ show(imageIndex);
 
 const imbox = document.querySelectorAll(".imageblock");
 const contr = document.querySelectorAll(".contr");
-let imboxIndex = 0
+let imboxIndex = 0;
 
 function showim(index) {
     imbox[imboxIndex].classList.remove('act');
@@ -43,24 +43,21 @@ function showim(index) {
 }
 
 contr.forEach((e) => {
-    e.addEventListener('click', () => {
+    e.addEventListener('click', (event) => {
         if (event.target.classList.contains('L')) {
             let index = imboxIndex - 1;
-
             if (index < 0) {
-                index = imboxIndex.length - 1;
+                index = imbox.length - 1;
             }
-            
-            showim(index)
-        }
-        else if (event.target.classList.contains('R')) {
+            showim(index);
+        } else if (event.target.classList.contains('R')) {
             let index = imboxIndex + 1;
-            if (index >= images.length) {
-                index = 0
+            if (index >= imbox.length) {
+                index = 0;
             }
-            showim(index)
+            showim(index);
         }
-    })
-})
+    });
+});
 
-showim(imboxIndex)
+showim(imboxIndex);
