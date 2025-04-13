@@ -401,6 +401,19 @@ p {
     margin-top: 100px;
 }
 
+.botlogo {
+    margin-right: 8px;
+}
+
+@media (max-width:1000px) {
+    .cont1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        box-sizing: unset;
+    }
+}
+
 .column {
     width: fit-content;
     height: auto;
