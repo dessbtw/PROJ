@@ -269,7 +269,7 @@ p {
 
 .projects {
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-color: #16181C;
     display: flex;
     flex-direction: column;
@@ -281,7 +281,6 @@ p {
 
 .textproject {
     margin: 0 auto;
-    padding: 0 auto;
     color: white;
 }
 
@@ -297,6 +296,14 @@ p {
     left: 0;
     opacity: 0;
     transition: opacity 0.5 ease;
+}
+
+.slidecont {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imageblock.act {
@@ -359,10 +366,10 @@ p {
 }
 
 .partners {
-    width: 100%;
-    background-color: #16181C;
+    width: auto;
     color: #ffffff;
     text-align: center;
+    margin: auto;
 }
 
 .company {
@@ -411,7 +418,26 @@ p {
         justify-content: flex-start;
         gap: 20px;
         box-sizing: unset;
+        padding-right: 5%;
     }
+    .projects {
+        height: 800px;
+    }
+}
+
+@media (max-width:725px) {
+    .projects {
+        height: 900px;
+    }
+}
+
+.partnersbl {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #16181C;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .column {
